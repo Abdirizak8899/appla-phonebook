@@ -33,7 +33,7 @@ header{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    padding: 10px;
+    padding: 20px;
 }
 .dflex-1{
     display: flex;
@@ -41,9 +41,6 @@ header{
     justify-content: space-between;
 }
 
-.brand{
-    padding: 30px;
-}
 .brand i,.brand a{
     color: var(--secondary-color);
     font-size: 1.1em;
