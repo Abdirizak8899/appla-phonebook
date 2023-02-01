@@ -104,7 +104,56 @@ nav ul li svg{
 .active{
     background-color: var(--primar-color);
 }
+.hole{
+    display: flex;
+    justify-content: space-between;
+}
+.hole .m-card {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+}
+.m-card .img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.m-card .img img{
+    width: 50%;
 
+}
+
+.m-card{
+    color: var(--primar-color);
+}
+.s-media{
+    display: flex;
+    align-items: center;
+}
+.s-media i{
+    margin: 10px;
+    font-size: 2em;
+
+
+}
+
+
+
+@media(min-width:1140px){
+    .m-card .img img{
+        width: 20%;
+    }
+   .hole .m-card{
+        width: 60%;
+        margin-left: 25px;
+    }    
+}
 @media(max-width:640px){
     .brand{
         font-size: 0.7em;
@@ -112,7 +161,12 @@ nav ul li svg{
     }
     .nav nav{
         display: flex;
-        width: 97%;
+        width: 100%;
+    }
+    .nav{
+        width: 99%;
+        margin-bottom: 30px;
+        margin-top: 12px;
     }
     .nav nav ul{
         display: flex;
@@ -131,4 +185,9 @@ nav ul li svg{
         align-items: center;
         flex-direction: column;
     }
+    .m-card{
+        font-size: 12px;
+    }
 }
+
+
