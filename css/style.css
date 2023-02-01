@@ -34,6 +34,8 @@ header{
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     padding: 20px;
+    display: flex;
+    align-items: center;
 }
 .dflex-1{
     display: flex;
@@ -99,9 +101,6 @@ nav ul li{
 nav ul li svg{
     width: 2em;
 }
-li:hover{
-    background-color: var(--primar-color);
-}
 .active{
     background-color: var(--primar-color);
 }
@@ -110,5 +109,17 @@ li:hover{
     .brand{
         font-size: 0.7em;
         padding: 10px;
+    }
+    .nav nav{
+        display: flex;
+        width: 97%;
+    }
+    .nav nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav nav ul li{
+        margin: 0;
+        margin-right: 20px;
     }
 }
