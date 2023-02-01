@@ -125,4 +125,10 @@ nav ul li svg{
         margin: 0;
         margin-right: 20px;
     }
+    .hole{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
