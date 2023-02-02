@@ -113,7 +113,6 @@ nav ul li svg:hover{
 }
 .hole{
     display: flex;
-    justify-content: space-between;
 }
 .hole .m-card {
     width: 100%;
@@ -155,7 +154,6 @@ nav ul li svg:hover{
     justify-content: space-between;
 }
 .search-bar{
-    border: 2px solid red;
     width: 100%;
     padding: 10px;
     display: flex;
@@ -197,6 +195,8 @@ nav ul li svg:hover{
     padding: 10px;
     border: 2px solid var(--rare-color);
     border-radius: 5px;
+    outline: none;
+    color: #fff;
 }
 .search button{
     background-color: var(--secondary-color);
@@ -208,7 +208,9 @@ nav ul li svg:hover{
     width: 20%;
     margin-left: 10px;
 }
-
+.search-bar input:focus{
+    border: 2px solid var(--secondary-color);
+}
 
 
 @media(min-width:1140px){
