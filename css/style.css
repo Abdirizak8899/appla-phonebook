@@ -213,6 +213,42 @@ nav ul li svg:hover{
 }
 
 
+
+
+.real-contacts{
+    display: flex;
+    flex-direction: column;
+}
+.real-contacts .c-sec{
+    display: flex;
+    background-color: var(--rare-color);
+    padding: 13px;
+    flex-direction: row;
+
+}
+.real-contacts .c-sec .head{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid red;
+}
+.real-contacts .c-sec .back{
+    border: 2px solid green;
+    
+}
+.real-contacts .c-sec svg{
+    width: 2em;
+}
+.real-contacts .c-sec .name{
+    display: flex;
+    border: #fff 2px solid;
+}
+
+
+
+
+
+
 @media(min-width:1140px){
     .m-card .img img{
         width: 20%;
