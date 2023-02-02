@@ -219,32 +219,60 @@ nav ul li svg:hover{
 .real-contacts{
     display: flex;
     flex-direction: column;
+    
 }
 .real-contacts .c-sec{
     display: flex;
     background-color: var(--rare-color);
     padding: 13px;
     flex-direction: row;
-
+    border-radius: 10px;
+    align-items: center;
 }
 .real-contacts .c-sec .head{
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: 2px solid red;
+    justify-content: center;
 }
 .real-contacts .c-sec .back{
-    border: 2px solid green;
-    
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 5px;
+    border: 2px solid var(--secondary-color);
+    color: var(--primar-color);    
+    position: absolute;
+    transform: translateX(300px);
 }
 .real-contacts .c-sec svg{
     width: 2em;
 }
-.real-contacts .c-sec .name{
-    display: flex;
-    border: #fff 2px solid;
+.real-contacts .c-sec .name,.real-contacts .c-sec .number{
+    margin: 5px 0;
 }
+.real-contacts .c-sec .name,.real-contacts .c-sec .number,.edit,.delete{
+    display: flex;
+    align-items: center;
 
+}
+.real-contacts i{
+    margin: 0 15px;
+    cursor: pointer;
+}
+.edit,
+.delete{
+    width: 100%;
+    border-radius: 10px;
+    padding: 2px;
+}
+.edit:hover,.delete:hover{
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.1);
+}
 
 
 
