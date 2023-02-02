@@ -11,7 +11,9 @@
     transition: 0.4s ease;
 }
 
-
+.hide{
+    display: none;
+}
 :root{
     --primar-color:#2D033B;
     --secondary-color:#C147E9;
@@ -228,6 +230,7 @@ nav ul li svg:hover{
     flex-direction: row;
     border-radius: 10px;
     align-items: center;
+    margin-bottom: 20px;
 }
 .real-contacts .c-sec .head{
     display: flex;
