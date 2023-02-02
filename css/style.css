@@ -8,6 +8,7 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    transition: 0.6s ease;
 }
 
 
@@ -98,8 +99,14 @@ nav ul li{
     justify-content: center;
     cursor: pointer;
 }
+nav ul li:hover{
+    background-color: var(--secondary-color);
+}
 nav ul li svg{
     width: 2em;
+}
+nav ul li svg:hover{
+  stroke: #ffff;
 }
 .active{
     background-color: var(--primar-color);
@@ -141,6 +148,64 @@ nav ul li svg{
     font-size: 2em;
 
 
+}
+
+.sea{
+    display: flex;
+    justify-content: space-between;
+}
+.search-bar{
+    border: 2px solid red;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+}
+
+.btn-c{
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 6px;
+    padding: 11px;
+    margin-bottom: 15px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+.search-bar .number{
+    border-radius: 50%;
+    padding: 7px;
+    background-color: #fff;
+    color: var(--primar-color);
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+.search,.search form{
+    display: flex;
+    width: 100%;
+}
+.search-bar input{
+    width: 100%;
+    background-color: var(--primar-color);
+    padding: 10px;
+    border: 2px solid var(--rare-color);
+    border-radius: 5px;
+}
+.search button{
+    background-color: var(--secondary-color);
+    border: none;
+    display: block;
+    padding: 7px;
+    border-radius: 5px;
+    color: #fff;
+    width: 20%;
 }
 
 
@@ -187,6 +252,12 @@ nav ul li svg{
     }
     .m-card{
         font-size: 12px;
+    }
+    .contacts .sea{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
