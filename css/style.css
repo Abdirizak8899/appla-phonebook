@@ -246,7 +246,7 @@ nav ul li svg:hover{
     border: 2px solid var(--secondary-color);
     color: var(--primar-color);    
     position: absolute;
-    transform: translateX(200px) translateY(100px);
+    transform: translateX(200px) translateY(30px);
 
 }
 .real-contacts .c-sec svg{
