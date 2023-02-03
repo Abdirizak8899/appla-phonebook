@@ -1,12 +1,13 @@
-const menue = document.querySelector('#menue')
+const searchInput = document.querySelector('#search'),
+contacts = document.querySelector('.real-contacts'),
+rContact = contacts.querySelectorAll('.r-name')
 
-menue.addEventListener('click' , check)
 
-const check = () =>{
-    let x = document.querySelector('.back')
-    if (x.style.display === 'flex'){
-        x.style.display = 'none'
-    }else{
-        x.style.display = 'flex'
-    }
-}
+searchInput.addEventListener('input', e =>{
+    const vlaue = e.value.toLocaleLowerCase()
+    rContact.forEach(contact =>{
+        const isVisible = contact.textContent.toLocaleLowerCase().includes(value)
+        contact.parentElement.parentElement.classList.toggle('hide' , !isVisible)
+    })
+    
+})

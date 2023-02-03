@@ -290,6 +290,10 @@ nav ul li svg:hover{
         width: 60%;
         margin-left: 25px;
     }    
+    .hide{
+        display: none;
+    }
+    
 }
 @media(max-width:640px){
     .brand{
@@ -331,6 +335,13 @@ nav ul li svg:hover{
         align-items: center;
         justify-content: center;
     }
+    .hide{
+        display: none;
+    }
+    
 }
 
 
+.hide{
+    display: none;
+}
