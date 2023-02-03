@@ -222,8 +222,21 @@ nav ul li svg:hover{
 .real-contacts{
     display: flex;
     flex-direction: column;
-    
+    height: 300px;
+    overflow-y: scroll;
 }
+.real-contacts::-webkit-scrollbar{
+    width: 7px;
+}
+.real-contacts::-webkit-scrollbar-thumb{
+    background: #C147E9;
+    border-radius: 30px;
+}
+
+.real-contacts::-webkit-scrollbar-track{
+    background: #eee;
+}
+
 .real-contacts .c-sec{
     display: flex;
     background-color: var(--rare-color);
