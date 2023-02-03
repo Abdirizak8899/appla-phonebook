@@ -27,3 +27,20 @@ mBtns.forEach(btn =>{
       
     });
 });
+
+
+const searchInput = document.getElementById('search')
+
+searchInput.addEventListener('keyup' , e =>{
+  value = e.target.value.toLowerCase();
+  console.log(value)
+  const names = document.querySelectorAll('.r-name')
+  names.forEach(name =>{
+    const isVisible = name.textContent.toLocaleLowerCase().includes(value);
+    if (!isVisible){
+      name.parentElement.parentElement.parentElement.classList.toggle('hide')
+      const rContact2 = document.querySelector('.real-contacts')
+    }
+  })
+
+})

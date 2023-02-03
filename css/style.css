@@ -245,6 +245,7 @@ nav ul li svg:hover{
     border-radius: 10px;
     align-items: center;
     margin-bottom: 20px;
+    overflow-x: visible;
 }
 .real-contacts .c-sec .head{
     display: flex;
@@ -265,6 +266,7 @@ nav ul li svg:hover{
     position: absolute;
     transform: translateX(200px) translateY(30px);
     display: none;
+    overflow: hidden;
 }
 .real-contacts .c-sec svg{
     width: 2em;
@@ -291,7 +293,6 @@ nav ul li svg:hover{
     cursor: pointer;
     background-color:rgba(0, 0, 0, 0.1);
 }
-
 
 
 
@@ -350,3 +351,6 @@ nav ul li svg:hover{
 
 
 
+.hide{
+    display: none;
+}
