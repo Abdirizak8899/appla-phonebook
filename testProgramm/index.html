@@ -4,57 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class list test</title>
     <style>
- /*local styles if any (quick tests and local only overrides)*/
-
-    #tasks li{
-        list-style: none;
-    }
-
-    #tasks .selected{
-        list-style: disc;
-    }
-
-    .completed{
-        text-decoration: line-through;
-    }
+        .container{
+            border: 2px solid gray;
+            width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+        }.section{
+            border: 2PX solid red;
+            height: 100px;
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 25px;
+        }
+        .change{
+            background: rgb(0,255,0);
+        }
     </style>
-    <title>testProgramm</title>
-
 </head>
 <body>
-  <div><input type="text" value="" id="new_task"><button id="add_task">Add Task</button></div>
 
-    <ul id="tasks">
-        <li class="completed selected">One Task</li>
-        <li>Two Task</li>
-    </ul>
+    <div class="container">
+        <div class="section">
+            <div class="bo">Box1</div>
+            <button>Remove</button>
+        </div>
+        <div class="section">
+            <div class="bo">Box2</div>
+            <button>Remove</button>
+        </div>
+    </div>
+
+
+
 
     <script>
+        const buttons = document.querySelectorAll('button')
+        window.addEventListener('click',() =>{
+            document.querySelector('body').classList.toggle('change')
+        })
+        buttons.forEach(btn =>{
+            btn.addEventListener('click', () =>{
 
-    var inputField = document.querySelector("#new_task");
-    var myButton = document.querySelector("#add_task");
-    var taskList = document.querySelector("#tasks");
-    var newList = document.createElement("li"); 
-    var completeTask = document.querySelector("li.completed.selected");
-    var incompleteTask = document.querySelector("li:not([class])");
-
-    myButton.onclick = function() {
-
-    taskList.appendChild(newList);
-    newList.innerHTML = inputField.value;
-    inputField.value = "";
-    }
-
-    completeTask.onclick = function() {
-    event.target.classList.remove("completed","selected");
-    }
-
-    incompleteTask.onclick = function() {
-    event.target.classList.add("completed","selected");
-    }
-
-
+                btn.parentElement.classList.toggle('change')
+            })
+        })
+        
     </script>
 </body>
 </html>

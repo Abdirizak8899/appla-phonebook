@@ -9,12 +9,21 @@ mBtns.forEach(btn =>{
     btn.addEventListener('click' ,() =>{
         const sec = btn.parentElement
         const x = sec.querySelector('.back') 
+
+      
+
+        // kan wuu shaqeenaa toggle ahaan uu u samenaa 
         if (x.style.display === 'flex'){
             x.style.display = 'none'
           }
           else{
             x.style.display = 'flex'
           }      
-        
+      
+      // lkn kan ma shaqenayo classkana waa mid jiro csska mana shaqenaayo
+
+      x.classList.toggle('hide')    
+
+      
     });
 });

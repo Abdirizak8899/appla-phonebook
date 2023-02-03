@@ -11,13 +11,14 @@
     transition: 0.4s ease;
 }
 
-.hide{
-    display: none;
-}
 :root{
     --primar-color:#2D033B;
     --secondary-color:#C147E9;
     --rare-color:#E5B8F4;
+}
+
+.hide{
+    display: none;
 }
 
 body{
@@ -280,9 +281,6 @@ nav ul li svg:hover{
 
 
 
-.hide{
-    display: none;
-}
 
 @media(min-width:1140px){
     .m-card .img img{
@@ -292,9 +290,6 @@ nav ul li svg:hover{
         width: 60%;
         margin-left: 25px;
     }    
-    .hide{
-        display: none;
-    }
     
 }
 @media(max-width:640px){
@@ -336,9 +331,6 @@ nav ul li svg:hover{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-    .hide{
-        display: none;
     }
     
 }
