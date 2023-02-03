@@ -250,7 +250,7 @@ nav ul li svg:hover{
     color: var(--primar-color);    
     position: absolute;
     transform: translateX(200px) translateY(30px);
-
+    display: none;
 }
 .real-contacts .c-sec svg{
     width: 2em;
@@ -280,7 +280,9 @@ nav ul li svg:hover{
 
 
 
-
+.hide{
+    display: none;
+}
 
 @media(min-width:1140px){
     .m-card .img img{
@@ -342,6 +344,4 @@ nav ul li svg:hover{
 }
 
 
-.hide{
-    display: none;
-}
+

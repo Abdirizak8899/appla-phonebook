@@ -1,13 +1,20 @@
-const searchInput = document.querySelector('#search'),
-contacts = document.querySelector('.real-contacts'),
-rContact = contacts.querySelectorAll('.r-name')
+const nContacts = document.querySelector('.contacts-number'),
+number = nContacts.querySelector('.number'),
+rContact = document.querySelector('.real-contacts'),
+eContact = rContact.querySelectorAll('.c-sec'),
+mBtns = document.querySelectorAll("#menue")
+number.innerHTML = eContact.length
 
-
-searchInput.addEventListener('input', e =>{
-    const vlaue = e.value.toLocaleLowerCase()
-    rContact.forEach(contact =>{
-        const isVisible = contact.textContent.toLocaleLowerCase().includes(value)
-        contact.parentElement.parentElement.classList.toggle('hide' , !isVisible)
-    })
-    
-})
+mBtns.forEach(btn =>{
+    btn.addEventListener('click' ,() =>{
+        const sec = btn.parentElement
+        const x = sec.querySelector('.back') 
+        if (x.style.display === 'flex'){
+            x.style.display = 'none'
+          }
+          else{
+            x.style.display = 'flex'
+          }      
+        
+    });
+});
