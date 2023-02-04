@@ -38,8 +38,11 @@ searchInput.addEventListener('keyup' , e =>{
   names.forEach(name =>{
     const isVisible = name.textContent.toLocaleLowerCase().includes(value);
     if (!isVisible){
-      name.parentElement.parentElement.parentElement.classList.toggle('hide')
-      const rContact2 = document.querySelector('.real-contacts')
+      name.parentElement.parentElement.parentElement.style.display = 'none'
+    }
+    else{
+      name.parentElement.parentElement.parentElement.style.display = 'flex'
+
     }
   })
 
