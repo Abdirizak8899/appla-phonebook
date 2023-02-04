@@ -47,3 +47,26 @@ searchInput.addEventListener('keyup' , e =>{
   })
 
 })
+
+const menueButton  = document.querySelectorAll('li')
+
+menueButton.forEach(btn =>{
+  btn.addEventListener('click' , e =>{
+    btn.classList.toggle('active')
+  })
+})
+
+const home = document.getElementById('home'),
+conttt = document.getElementById('contacts')
+
+if (home.classList.contains('active')){
+  console.log('home')
+  rContact.parentElement.style.display = 'none'
+  conttt.classList.remove('active')
+
+}
+if (conttt.classList.contains('active')){
+  rContact.parentElement.style.display = 'flex'
+  home.classList.remove('active')
+
+}

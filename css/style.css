@@ -102,14 +102,8 @@ nav ul li{
     justify-content: center;
     cursor: pointer;
 }
-nav ul li:hover{
-    background-color: var(--secondary-color);
-}
 nav ul li svg{
     width: 2em;
-}
-nav ul li svg:hover{
-  stroke: #ffff;
 }
 .active{
     background-color: var(--primar-color);
